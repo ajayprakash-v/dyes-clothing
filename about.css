@@ -1,0 +1,305 @@
+
+#sec1{
+	height: 140vh;
+	width: 100%;
+	background-color: #232123;
+	overflow: hidden;
+}
+.part1{
+	width: 100%;
+	height: 30%;
+	background-color: black;
+}
+.part1 div{
+	width: 20%;
+	background-color: brown;
+	border: 2px solid;
+}
+#sec1{
+	position: relative;
+	transition: 2s;
+}
+#sec1 img:nth-child(1){
+	position: absolute;
+	top: 3vw;
+	width: 30vw;
+	left: 50%;
+}
+#sec1 img:nth-child(2){
+	position: absolute;
+	top: 30vw;
+	width: 30vw;
+	left: ;
+}
+#sec1 img:nth-child(3){
+	position: absolute;
+	top: 30vw;
+	width: 50vw;
+	left: 50%;
+}
+#sec2,#sec4{
+	width: 100%;
+	height: 100vh;
+	background-color: #232123;
+}
+nav a,span{
+	color: #ffdfcd;
+	margin: 3vw;
+	font-size: clamp(12px, 1vw, 50px);
+	text-decoration: none;
+	font-weight: bold;
+}
+nav{
+	position: fixed;
+	z-index: 3;
+	width: 100%;
+	transition: 1s;
+}
+nav span{
+	margin-top: 1.6vw;
+	border-radius: 50%;
+	padding: 1vw;
+	border: 1px dotted white;
+}
+.fade{
+	opacity: .5;
+	transition: 2s;
+}
+#fade{
+	z-index: 1;
+	opacity: 0;
+}
+@font-face{
+	src: url('f1.ttf');
+	font-family: f1;
+}
+#sec2 h1{
+	color: #ffdfcd;
+	font-size: 5vw;
+	font-family: f1;
+}
+#sec2 p{
+	color: white;
+}
+#sec3{
+	width: 100%;
+	height: 200vh;
+}
+#sec3{
+	background-image: url('images/pa3.jpeg');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#sec3 img{
+	width:40vw ;
+}
+#sec4 h1{
+	color: #ffdfcd;
+	font-size: 5vw;
+	font-family: f1;
+}
+#sec4 p{
+	color: white;
+}
+#sec4 img{
+	margin-top: 3vw;
+	width: 5vw;
+	animation: arrow 2s infinite linear;
+}
+@keyframes arrow{
+	0%{
+		transform: translateY(0px);
+	}
+	25%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	75%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(0px);
+	}
+}
+#sec5{
+	height: 100vh;
+	width: 100%;
+	background-color: #232123;
+	color: white;
+}
+#sec5 h1{
+	color: #ffdfcd;
+	font-family: f1;
+	font-size: 5vw;
+
+}
+#images {
+	width: 45vw;
+}
+#cursor{
+	position: relative;
+}
+#circ{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: -10%;
+	transition: 1s;
+	width: 8vw;
+	height: 8vw;
+	border-radius: 50%;
+	background-color: brown;
+}
+#sec6{
+	max-width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #232123;
+	display: flex;
+}
+#circ img{
+	width: 3vw;
+	transform: rotate(-90deg);
+}
+#roller{
+	background-color: black;
+	width: 100%;
+	overflow: hidden;
+	color: #ffdfcd;
+	font-size: 1.5vw;
+}
+#roller p{
+	width: 150%;
+}
+#sec6{
+	width: 100%;
+	height: 50vh;
+	background-color: #232123;
+}
+#sec7{
+	width: 100%;
+	height: 100vh;
+	background-color: brown;
+}
+#sec7 div:nth-child(1){
+	width: 100%;
+	height: 45%;
+	background-color: black;
+}
+#sec7 div div:nth-child(1){
+	width: 33.3%;
+	height: 100%;
+	overflow: hidden;
+}
+#sec7 div div:nth-child(2){
+	width: 33.3%;
+	height: 100%;
+	overflow: hidden;
+}
+#sec7 div div:nth-child(3){
+	width: 33.3%;
+	height: 100%;
+	overflow: hidden;
+}
+#sec7 img{
+	width: 100%;
+	transition: .5s;
+}
+#sec7 img:hover{
+	opacity: .5;
+	transition: .5s;
+}
+#sec7 h1{
+	color: #ffdfcd;
+	font-family: f1;
+	font-size: 3.5vw;
+	margin-bottom: 3vw;
+}
+#sec7 a{
+	text-decoration: none;
+	color:#ffdfcd ;
+	border: dashed 2px red;
+	padding: 10px;
+	border-radius:10px ;
+	font-size: 1vw;
+}
+#sec7 a:hover{
+	transition: 2s;
+	animation: a 2s;
+}
+@keyframes a{
+	0%{
+		zoom: 0;
+	}
+	25%{
+		zoom: 2;
+	}
+	50%{
+		zoom: 0;
+	}
+	75%{
+		zoom: 2;
+	}
+	100%{
+		zoom: 0;
+	}
+}
+#sec8{
+	width: 100%;
+	height: 70vh;
+	overflow: hidden;
+	background-color: #232123;
+}
+.roller{
+	width: 200%;
+}
+.roller p{
+	color: white;
+	color: #ffdfcd;
+	font-size: clamp(12px, 2vw, 100px);
+	animation: roller 30s infinite linear;
+}
+
+@keyframes roller{
+	0%{
+		transform: translateX(100vw);
+	}
+	100%{
+		transform: translateX(-200vw);
+	}
+}
+#box{
+	height: 100%;
+}
+#box div{
+		width: 25%;
+		background-color: #ffdfcd;
+		border: 1px solid;
+		height: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+}
+#box div a{
+	text-decoration: none;
+	color: black;
+	font-size: 3vw;
+	font-family: f1;
+}
+footer span{
+	text-decoration: none;
+	color: white;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+}
+footer {
+	background-color: #232123;
+}
